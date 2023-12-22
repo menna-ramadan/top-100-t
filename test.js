@@ -72,9 +72,20 @@ console.log("hellooooo");
 // }
 // console.log(getCount("jhggfddsaiytu"));
 
-function getCount(str) {
-  words = str.split(" ");
-  shorts = words[0].length;
-  return words.filter((x) => x.length > shorts);
+// function getCount(str) {
+//   words = str.split(" ");
+//   shorts = words[0].length;
+//   return words.filter((x) => x.length > shorts);
+// }
+// console.log(getCount("jhgg fdds aiy tu"));
+
+function squareDigits(num) {
+  return Number(
+    num
+      .split("")
+      .map((x) => x * x)
+      .join("")
+  );
 }
-console.log(getCount("jhgg fdds aiy tu"));
+
+console.log(squareDigits("2112"));
